@@ -19,10 +19,13 @@
 				}
 			],
 			"scriptLines": [
+				"parameters{",
+				"     parameter_rating as integer (2)",
+				"}",
 				"source(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
-				"source1 filter(ERROR_FUNCTION('$$YEAR >= 1930')) ~> filter1"
+				"source1 filter(ERROR_FUNCTION('$$parameter_rating >= 2')) ~> filter1"
 			]
 		}
 	}
