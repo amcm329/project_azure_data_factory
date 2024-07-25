@@ -96,7 +96,10 @@
 				"typeProperties": {
 					"dataflow": {
 						"referenceName": "dataflow1",
-						"type": "DataFlowReference"
+						"type": "DataFlowReference",
+						"parameters": {
+							"parameter_rating": "2"
+						}
 					},
 					"compute": {
 						"coreCount": 8,
