@@ -22,8 +22,9 @@
 				"parameters{",
 				"     parameter_rating as integer (2)",
 				"}",
-				"source(allowSchemaDrift: false,",
-				"     validateSchema: true,",
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     inferDriftedColumnTypes: true,",
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 filter(ERROR_FUNCTION('')) ~> filter1"
 			]
