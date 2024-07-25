@@ -6,7 +6,7 @@
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "DestinationDataset_732",
+						"referenceName": "SourceDataset_732",
 						"type": "DatasetReference"
 					},
 					"name": "source1"
@@ -34,11 +34,11 @@
 				"     parameter_rating as integer (2)",
 				"}",
 				"source(output(",
-				"          movies as integer,",
+				"          movies as string,",
 				"          Title as string,",
 				"          genresgenregenre as string,",
-				"          YEAR as short,",
-				"          Rating as short",
+				"          YEAR as string,",
+				"          Rating as string",
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
